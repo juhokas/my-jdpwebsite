@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +12,15 @@
     <!-- Link to external style.css file -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Bootstrap Navigation Menu -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container mx-auto">
             <a class="navbar-brand" href="index.html">Juho's website</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -36,36 +39,42 @@
         </div>
     </nav>
 
-        <!-- Hero Header with Image -->
-        <header class="hero-header">
-            <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mountain Landscape" class="img-fluid">
-            <div class="hero-text">
-                <h1 class="display-4">Your Website Title</h1>
-                <p class="lead">Welcome to a stunning mountain landscape.</p>
-            </div>
-        </header>
-    
-        <br />
-    
+    <!-- Hero Header with Image -->
+    <header class="hero-header">
+        <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mountain Landscape" class="img-fluid">
+        <div class="hero-text">
+            <h1 class="display-4">Your Website Title</h1>
+            <p class="lead">Welcome to a stunning mountain landscape.</p>
+        </div>
+    </header>
+
+    <br />
+
     <!-- Your page content goes here -->
     <header class="text-center py-5">
         <h1 class="display-4">Contact Us</h1>
     </header>
 
     <main class="text-center">
-        <section id="home">
-            <h2 class="mb-4">Home Section</h2>
-            <p>Welcome to our website!</p>
-        </section>
-
-        <section id="about">
-            <h2 class="mb-4">About Section</h2>
-            <p>Learn more about us.</p>
-        </section>
-
-        <section id="contact">
+        <section id="contact" class="container">
             <h2 class="mb-4">Contact Section</h2>
-            <p>Get in touch with us.</p>
+    
+            <!-- Narrow and Centered Contact Form -->
+            <form class="mx-auto col-lg-6 col-md-8 col-sm-10">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="john@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </section>
     </main>
 
@@ -78,4 +87,5 @@
 
     <!-- Your custom scripts or additional script files can be added here -->
 </body>
+
 </html>
